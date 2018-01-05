@@ -37,7 +37,17 @@ public class Event {
         return this.guestPrice;
     }
 
-
+    public String foodPriceCalc() {
+        if (this.food == "chicken") {
+            this.foodPrice = "150";
+        } else if (this.food=="steak") {
+            this.foodPrice = "200";
+        } else if (this.food == "vegetarian") {
+            this.foodPrice = "100";
+        } else {
+            return "Please enter 'chicken', 'steak' or 'vegetarian'";
+        } return this.foodPrice;
+    }
 
 
     public int getGuests() {
