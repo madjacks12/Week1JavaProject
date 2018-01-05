@@ -22,7 +22,7 @@ public class Event {
     }
 
 
-    public int guestPrice() {
+    public int guestPriceCalc() {
         if (15 > this.guests) {
             this.guestPrice += 100;
         } else if ((this.guests >= 15) && (this.guests <= 50)) {
@@ -36,6 +36,8 @@ public class Event {
         }
         return this.guestPrice;
     }
+
+
 
 
     public int getGuests() {
