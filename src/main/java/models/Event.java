@@ -15,6 +15,20 @@ public class Event {
         this.price = price;
     }
 
+    public int guestPrice() {
+        if (15 > this.guests) {
+            this.price += 100;
+        } else if ((this.guests >= 15) && (this.guests <= 50)) {
+            this.price += 200;
+        } else if ((this.guests > 50) && (this.guests <= 100)) {
+            this.price += 300;
+        } else if ((this.guests > 100) && (this.guests <= 300)) {
+            this.price += 300;
+        }
+            else { return 000;
+                }
+        return this.price;
+    }
 
     public int getGuests(){
         return this.guests;
