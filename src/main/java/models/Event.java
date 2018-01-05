@@ -6,11 +6,13 @@ public class Event {
     private int bev;
     private int ent;
 
+
     public Event(int guests, int food, int bev, int ent) {
         this.guests = guests;
         this.food = food;
         this.bev = bev;
         this.ent = ent;
+
 
 
     }

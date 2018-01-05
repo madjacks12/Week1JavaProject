@@ -29,5 +29,9 @@ public class EventTest {
         Event testEvent = new Event(2, 4, 6, 8);
         assertEquals(8,  testEvent.getEnt());
     }
-
+    @Test
+    public void runEvent_getsPrice_10() {
+        Event testEvent = new Event(2, 4, 6, 8, 10);
+        assertEquals(10,  testEvent.getPrice());
+    }
 }
