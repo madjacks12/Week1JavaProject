@@ -61,6 +61,17 @@ public class Event {
         } return this.bevPrice;
     }
 
+    public String entPriceCalc() {
+        if (this.ent == "none") {
+            this.entPrice = "0";
+        } else if (this.ent=="DJ") {
+            this.ent = "500";
+        } else if (this.ent == "live band") {
+            this.entPrice = "1000";
+        } else {
+            return "Please enter 'live band', 'DJ' or 'none'";
+        } return this.entPrice;
+    }
 
 
 
