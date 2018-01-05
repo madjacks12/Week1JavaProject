@@ -41,41 +41,41 @@ public class Event {
     public String foodPriceCalc() {
         if (this.food == "chicken") {
             this.foodPrice = "150";
-        } else if (this.food=="steak") {
+        } else if (this.food == "steak") {
             this.foodPrice = "200";
         } else if (this.food == "vegetarian") {
             this.foodPrice = "100";
         } else {
             return "Please enter 'chicken', 'steak' or 'vegetarian'";
-        } return this.foodPrice;
+        }
+        return this.foodPrice;
     }
 
     public String bevPriceCalc() {
         if (this.bev == "soda") {
             this.bevPrice = "50";
-        } else if (this.bev=="beer and wine") {
+        } else if (this.bev == "beer and wine") {
             this.bevPrice = "200";
         } else if (this.bev == "open bar") {
             this.bevPrice = "1000";
         } else {
             return "Please enter 'soda', 'beer and wine' or 'open bar'";
-        } return this.bevPrice;
+        }
+        return this.bevPrice;
     }
 
     public String entPriceCalc() {
         if (this.ent == "none") {
             this.entPrice = "0";
-        } else if (this.ent=="DJ") {
+        } else if (this.ent == "DJ") {
             this.ent = "500";
         } else if (this.ent == "live band") {
             this.entPrice = "1000";
         } else {
             return "Please enter 'live band', 'DJ' or 'none'";
-        } return this.entPrice;
+        }
+        return this.entPrice;
     }
-
-    int parseFood = Integer.parseInt(this.foodPrice);
-
 
 
     public int getGuests() {

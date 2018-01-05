@@ -6,77 +6,89 @@ public class EventTest {
 
     @Test
     public void runEvent_instanceWorks_2() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 10, "10", "20", "30");
         assertEquals(true, testEvent instanceof Event);
     }
+
     @Test
     public void runEvent_getsGuests_2() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 10, "10", "20", "30");
         assertEquals(2, testEvent.getGuests());
     }
+
     @Test
     public void runEvent_getsFood_4() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 10, "10", "20", "30");
         assertEquals("chicken", testEvent.getFood());
     }
+
     @Test
     public void runEvent_getsBeverages_6() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
-        assertEquals("soda",  testEvent.getBev());
+        Event testEvent = new Event(2, "chicken", "soda", "band", 10, "10", "20", "30");
+        assertEquals("soda", testEvent.getBev());
     }
+
     @Test
     public void runEvent_getsEnt_8() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
-        assertEquals("band",  testEvent.getEnt());
+        Event testEvent = new Event(2, "chicken", "soda", "band", 10, "10", "20", "30");
+        assertEquals("band", testEvent.getEnt());
     }
+
     @Test
     public void runEvent_guestsCalculatesPrice_100() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "20", "30");
 
-        assertEquals(100,  testEvent.guestPriceCalc());
+        assertEquals(100, testEvent.guestPriceCalc());
     }
+
     @Test
     public void runEvent_foodReturnsPrice_10() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "20", "30");
 
-        assertEquals("10",  testEvent.getFoodCost());
+        assertEquals("10", testEvent.getFoodCost());
     }
+
     @Test
     public void runEvent_bevReturnsPrice_20() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "20", "30");
 
-        assertEquals("20",  testEvent.getBevCost());
+        assertEquals("20", testEvent.getBevCost());
     }
+
     @Test
     public void runEvent_entReturnsPrice_30() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "20", "30");
 
-        assertEquals("30",  testEvent.getEntCost());
+        assertEquals("30", testEvent.getEntCost());
     }
+
     @Test
     public void runEvent_foodCalculatesCost_100() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "20", "30");
 
-        assertEquals("150",  testEvent.foodPriceCalc());
+        assertEquals("150", testEvent.foodPriceCalc());
     }
+
     @Test
     public void runEvent_bevCalculatesCost_50() {
-        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "50", "30");
+        Event testEvent = new Event(2, "chicken", "soda", "band", 0, "10", "50", "30");
 
-        assertEquals("50",  testEvent.bevPriceCalc());
+        assertEquals("50", testEvent.bevPriceCalc());
     }
+
     @Test
     public void runEvent_entCalculatesCost_50() {
-        Event testEvent = new Event(2,"chicken","soda","live band",0, "10", "50", "0");
+        Event testEvent = new Event(2, "chicken", "soda", "live band", 0, "10", "50", "0");
 
-        assertEquals("1000",  testEvent.entPriceCalc());
-    }
-    @Test
-    public void runEvent_TotalCost_2000() {
-        Event testEvent = new Event(2,"chicken","soda","live band",0, "10", "50", "0");
-
-        assertEquals("2000",  testEvent.totalCost());
-
-
+        assertEquals("1000", testEvent.entPriceCalc());
     }
 
+//    @Test
+//    public void runEvent_TotalCost_2000() {
+//        Event testEvent = new Event(2, "chicken", "soda", "live band", 100, "10", "50", "0");
+//
+//        assertEquals("2000", testEvent.totalCost());
+//
+//
+//    }
+}
