@@ -22,18 +22,23 @@ public class EventTest {
     @Test
     public void runEvent_getsBeverages_6() {
         Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
-        assertEquals(6,  testEvent.getBev());
+        assertEquals("soda",  testEvent.getBev());
     }
     @Test
     public void runEvent_getsEnt_8() {
         Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
-        assertEquals(8,  testEvent.getEnt());
+        assertEquals("band",  testEvent.getEnt());
     }
     @Test
     public void runEvent_guestsReturnsPrice_300() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
+        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
 
-        assertEquals(300,  testEvent.guestPrice());
+        assertEquals(100,  testEvent.guestPrice());
     }
+    @Test
+    public void runEvent_foodReturnsPrice_300() {
+        Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
 
+        assertEquals(0,  testEvent.guestPrice());
+    }
 }
