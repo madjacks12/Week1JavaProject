@@ -21,7 +21,6 @@ public class Event {
     }
 
 
-
     public int guestPrice() {
         if (15 > this.guests) {
             this.guestPrice += 100;
@@ -31,27 +30,43 @@ public class Event {
             this.guestPrice += 300;
         } else if ((this.guests > 100) && (this.guests <= 300)) {
             this.guestPrice += 300;
-        }
-        else { return 0;
+        } else {
+            return 0;
         }
         return this.guestPrice;
     }
 
 
-
-    public int getGuests(){
+    public int getGuests() {
         return this.guests;
     }
-    public String getFood(){
+
+    public String getFood() {
         return this.food;
     }
-    public int getBev(){
+
+    public String getBev() {
         return this.bev;
     }
-    public int getEnt(){
+
+    public String getEnt() {
         return this.ent;
     }
-    public int getPrice(){
-        return this.price;
+
+    public int getGuestCost() {
+        return this.guestPrice;
     }
+
+    public String getFoodCost() {
+        return this.foodPrice;
+    }
+
+    public String getBevCost() {
+        return this.bevPrice;
+    }
+
+    public String getEntCost() {
+        return this.entPrice;
+    }
+
 }

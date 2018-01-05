@@ -30,11 +30,6 @@ public class EventTest {
         assertEquals(8,  testEvent.getEnt());
     }
     @Test
-    public void runEvent_getsPrice_10() {
-        Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
-        assertEquals(10,  testEvent.getPrice());
-    }
-    @Test
     public void runEvent_guestsReturnsPrice_300() {
         Event testEvent = new Event(2,"chicken","soda","band",10, "10", "20", "30");
 
