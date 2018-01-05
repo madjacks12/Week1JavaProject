@@ -74,7 +74,7 @@ public class Event {
         } return this.entPrice;
     }
 
-    //int parseFood = Integer.parseInt(this.foodPrice);
+    int parseFood = Integer.parseInt(this.foodPrice);
 
 
 
