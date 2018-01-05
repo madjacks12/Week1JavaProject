@@ -39,6 +39,6 @@ public class EventTest {
     public void runEvent_foodReturnsPrice_300() {
         Event testEvent = new Event(2,"chicken","soda","band",0, "10", "20", "30");
 
-        assertEquals(0,  testEvent.guestPrice());
+        assertEquals("10",  testEvent.getFoodCost());
     }
 }
