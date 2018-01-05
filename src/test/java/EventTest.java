@@ -65,4 +65,12 @@ public class EventTest {
 
         assertEquals("50",  testEvent.bevPriceCalc());
     }
-}
+    @Test
+    public void runEvent_entCalculatesCost_50() {
+        Event testEvent = new Event(2,"chicken","soda","live band",0, "10", "50", "0");
+
+        assertEquals("1000",  testEvent.entPriceCalc());
+    }
+
+    }
+
