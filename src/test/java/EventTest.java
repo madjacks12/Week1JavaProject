@@ -35,10 +35,11 @@ public class EventTest {
         assertEquals(10,  testEvent.getPrice());
     }
     @Test
-    public void runEvent_guestsReturnsPrice_10() {
+    public void runEvent_guestsReturnsPrice_300() {
         Event testEvent = new Event(200, 4, 6, 8, 0);
 
         assertEquals(300,  testEvent.guestPrice());
     }
+
 
 }
