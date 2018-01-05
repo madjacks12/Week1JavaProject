@@ -49,6 +49,18 @@ public class Event {
         } return this.foodPrice;
     }
 
+    public String bevPriceCalc() {
+        if (this.bev == "soda") {
+            this.bevPrice = "50";
+        } else if (this.bev=="beer and wine") {
+            this.bevPrice = "200";
+        } else if (this.bev == "open bar") {
+            this.bevPrice = "1000";
+        } else {
+            return "Please enter 'soda', 'beer and wine' or 'open bar'";
+        } return this.bevPrice;
+    }
+
 
     public int getGuests() {
         return this.guests;
