@@ -13,10 +13,9 @@ public class Event {
         this.bev = bev;
         this.ent = ent;
         this.price = price;
-
-
-
     }
+
+
     public int getGuests(){
         return this.guests;
     }
