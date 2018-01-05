@@ -71,6 +71,12 @@ public class EventTest {
 
         assertEquals("1000",  testEvent.entPriceCalc());
     }
+    @Test
+    public void runEvent_parseFoodCost_2000() {
+        Event testEvent = new Event(2,"chicken","soda","live band",0, "10", "50", "0");
+
+        assertEquals("2000",  testEvent.parseFood());
+
 
     }
 

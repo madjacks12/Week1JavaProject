@@ -10,6 +10,7 @@ public class Event {
     private String bevPrice;
     private String entPrice;
 
+
     public Event(int guests, String food, String bev, String ent, int guestPrice, String foodPrice, String bevPrice, String entPrice) {
         this.guests = guests;
         this.food = food;
@@ -73,7 +74,7 @@ public class Event {
         } return this.entPrice;
     }
 
-
+    //int parseFood = Integer.parseInt(this.foodPrice);
 
 
 
