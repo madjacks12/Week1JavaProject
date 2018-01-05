@@ -17,6 +17,7 @@ public class Event {
         this.ent = ent;
         this.guestPrice = guestPrice;
         this.foodPrice = foodPrice;
+        this.bevPrice = bevPrice;
         this.entPrice = entPrice;
     }
 
