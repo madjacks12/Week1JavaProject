@@ -24,5 +24,10 @@ public class EventTest {
         Event testEvent = new Event(2, 4, 6);
         assertEquals(6,  testEvent.getBev());
     }
+    @Test
+    public void runEvent_getsEnt_8() {
+        Event testEvent = new Event(2, 4, 6, 8);
+        assertEquals(8,  testEvent.getEnt());
+    }
 
 }
