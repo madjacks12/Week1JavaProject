@@ -40,6 +40,11 @@ public class EventTest {
 
         assertEquals(300,  testEvent.guestPrice());
     }
+    @Test
+    public void runEvent_foodReturnsPrice_200() {
+        Event testEvent = new Event(200, 4, 6, 8, 0);
 
+        assertEquals(200,  testEvent.foodPrice());
+    }
 
 }
