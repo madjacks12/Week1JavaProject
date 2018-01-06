@@ -36,11 +36,11 @@ public class Event {
 
     public String foodPriceCalc() {
         if (this.food == "chicken") {
-            foodPrice = "150";
+            foodPrice += "150";
         } else if (this.food == "steak") {
-            foodPrice = "200";
+            foodPrice += "200";
         } else if (this.food == "vegetarian") {
-            foodPrice = "100";
+            foodPrice += "100";
         } else {
             return "Please enter 'chicken', 'steak' or 'vegetarian'";
         }

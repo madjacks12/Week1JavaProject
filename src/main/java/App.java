@@ -30,12 +30,14 @@ public class App {
             System.out.print("Pick what type of entertainment you would like at your event? pick 'DJ', 'live band' or 'none'");
             String ent = keyboard.next();
             Event newEvent = new Event(guests, food, bev, ent);
+
             int guestPrice = newEvent.guestPriceCalc(); //this works
             String foodPriceString = newEvent.foodPriceCalc(); //nothing below here does
-            String bevPriceString = newEvent.bevPriceCalc();
-            System.out.print(bevPriceString);
-            String entPriceString = newEvent.entPriceCalc();
-           // int foodPrice = Integer.parseInt(foodPriceString);
+            //String bevPriceString = newEvent.bevPriceCalc();
+           // System.out.print(bevPriceString);
+            //String entPriceString = newEvent.entPriceCalc();
+           //int foodPrice = Integer.parseInt(foodPriceString);
+            //System.out.print(foodPrice);
            // int bevPrice = Integer.parseInt(bevPriceString);
            // int entPrice = Integer.parseInt(entPriceString);
             //System.out.print("Your total is: " + (guestPrice+foodPrice + bevPrice + entPrice));
