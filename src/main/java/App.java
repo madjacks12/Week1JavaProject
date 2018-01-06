@@ -12,9 +12,6 @@ public class App {
     public static void main(String[] args) {
         boolean programRunning = true;
 
-//        System.out.println("Hello! Let's estimate the cost of your next event!");
-//        System.out.println("How many guests will be attending your event?");
-
         Scanner keyboard = new Scanner(System.in);
 
         while (programRunning) {

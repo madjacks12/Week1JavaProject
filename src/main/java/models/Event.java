@@ -90,20 +90,4 @@ public class Event {
         return this.ent;
     }
 
-    public int getGuestCost() {
-        return guestPrice;
-    }
-
-    public String getFoodCost() {
-        return foodPrice;
-    }
-
-    public String getBevCost() {
-        return bevPrice;
-    }
-
-    public String getEntCost() {
-        return entPrice;
-    }
-
 }
