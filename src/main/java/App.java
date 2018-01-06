@@ -21,23 +21,27 @@ public class App {
 
             System.out.println("Hello! Let's estimate the cost of your next event!");
             System.out.println("How many guests will be attending your event?");
-            String guestsString = keyboard.nextLine();
-            int guests = Integer.parseInt(guestsString);
+            String guestString=keyboard.next();
+            int guests = Integer.parseInt(guestString);
             System.out.print("What meal would you like served? pick 'chicken', 'steak' or 'vegetarian'");
-            String food = keyboard.nextLine();
+            String food = keyboard.next();
             System.out.print("Which beverages would you like served? pick 'soda', 'beer and wine' or 'open bar'");
-            String bev = keyboard.nextLine();
+            String bev = keyboard.next();
             System.out.print("Pick what type of entertainment you would like at your event? pick 'DJ', 'live band' or 'none'");
-            String ent = keyboard.nextLine();
-
-            //int number = keyboard.nextint();  // another local variable
-            //keyboard.nextLine();  // to handle the end of line characters
+            String ent = keyboard.next();
             Event newEvent = new Event(guests, food, bev, ent);
-            newEvent.foodPriceCalc();
-            newEvent.bevPriceCalc();
+            int guestPrice = newEvent.guestPriceCalc(); //this works
+            String foodPriceString = newEvent.foodPriceCalc(); //nothing below here does
+            String bevPriceString = newEvent.bevPriceCalc();
+            System.out.print(bevPriceString);
+            String entPriceString = newEvent.entPriceCalc();
+           // int foodPrice = Integer.parseInt(foodPriceString);
+           // int bevPrice = Integer.parseInt(bevPriceString);
+           // int entPrice = Integer.parseInt(entPriceString);
+            //System.out.print("Your total is: " + (guestPrice+foodPrice + bevPrice + entPrice));
+
         }
     }
-
 }
 
 
